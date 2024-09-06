@@ -1,0 +1,2147 @@
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Menghilangkan horizontal scroll */
+    background-color: #eeeeee !important;
+}
+
+.Home-Flashfit-section{
+    background-image: url(../images/home.png);
+    background-size: cover; /* Memastikan gambar menutupi seluruh area */
+    background-position: center; /* Posisikan gambar di tengah */
+    background-repeat: no-repeat; /* Gambar tidak akan diulang */
+    height: 100vh;
+}
+.navbar {
+    background: linear-gradient(180deg, rgb(206, 252, 3) 0%, rgba(255, 255, 255, 0) 100%); /* Gradasi dari warna solid ke transparan */
+    width: 200vh;
+}
+
+.menu-ft{
+    display:flex;
+}
+
+.menu-ft a{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.circle-button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #FFBB00; /* Button background color */
+    color: white;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.club-section{
+    background-color: #ffffff;
+}
+
+.owl-shop .items4 {
+    width: 279px !important;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+}
+.owl-shop .items4 img {
+    width: 218px !important;
+    height: 218px;
+}
+.card-produk {
+    position: relative;
+    width: 376px; /* Same as image width */
+    height: 196px; /* Same as image height */
+    border-radius: 23px;
+}
+.card-produk2 {
+    position: relative;
+    width: 600px; /* Same as image width */
+    height: 200px; /* Same as image height */
+    border-radius: 20px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    border-radius: 23px;
+}
+.card-img-top1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 23px;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #CFFC03;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 80%; /* Optional: Adjust width of the overlay */
+}
+.text-overlay2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #CFFC03;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 80%; /* Optional: Adjust width of the overlay */
+}
+.text-overlay1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    width: 80%; /* Optional: Adjust width of the overlay */
+}
+
+.text-overlay .card-title {
+    margin: 0;
+}
+
+.text-overlay .card-text {
+    margin: 0;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #fbb03b !important;
+}
+.card {
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #d3d93d;
+    color: #000;
+    margin-top: 20px;
+}
+.tooltip-inner {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.tooltip-arrow {
+    border-top-color: #333 !important;
+}
+
+.info-section{
+    background-color: #CFFC03;
+    height: 55vh;
+}
+.form-control{
+    width: 100% !important;
+    background-color: #D2D2D2!important;
+    color: #616161 !important;
+}
+.input-group-text{
+    background-color: #D2D2D2!important;
+}
+.green-card{
+    background-color: #CFFC03; height: 200px;overflow:hidden;
+}
+
+.hidden-card{
+    width:100%;
+    height:200px;
+    background: #FFBB00;
+    bottom:-100%;
+    left:-100%;
+}
+
+.green-card:hover .hidden-card{
+    bottom:0%;
+    left:0%;
+    transition:.5s;
+}
+.card-produk1 {
+    position: relative;
+    width: 100%; /* Same as image width */
+    height: 200px; /* Same as image height */
+    border-radius: 20px;
+}
+.overlay-footer{
+    background-image: url(../images/footer.png);
+    background-size: cover; /* Memastikan gambar menutupi seluruh area */
+    background-position: center; /* Posisikan gambar di tengah */
+    background-repeat: no-repeat; /* Gambar tidak akan diulang */
+    height: 60vh;
+}
+.footer-section{
+    background-color: #CFFC03;
+}
+
+#hidemenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #CFFC03;
+    width: 90%;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 1000;
+}
+#hidemenu.show {
+    transform: translateX(0);
+}
+.hiddenmenu {
+    position: absolute;
+    top: 0;
+    right: -300px; /* Menu tersembunyi di luar layar */
+    background: #f8f9fa;
+    width: 300px;
+    height: 100vh;
+    transition: right 0.5s ease-in-out;
+    z-index: 1000;
+    padding: 20px;
+}
+.hiddenmenu.show {
+    right: 0; /* Menu ditampilkan */
+}
+/* Style untuk tombol tutup menu */
+#closemenu {
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+/* Style untuk tombol show menu */
+#showmenu {
+    margin-top: 20px;
+}
+/* Style untuk ikon mata */
+#eyemenu {
+    font-size: 2rem;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+.hiddenmenu{
+    background:  #CFFC03;
+    width:100%;
+    z-index:5;
+    height:100vh;
+    border-radius: 20px;
+    top:0;
+    right:-100%;
+    transition:.5s;
+}
+.kelas-section .card {
+    display: grid !important;
+    width: 100% !important;
+    height: 40vh !important;
+    border-radius: 24px !important;
+}
+.kelas-section .card-img-top {
+    width: 100% !important;
+    height: 25vh !important;
+    border-radius: 23px !important;
+}
+/* .carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.carousel-item img {
+    background-size: cover;
+    height: 100vh;
+} */
+
+@media (max-width: 1780px) {
+    .navbar{
+        width: 297vh !important;
+    }
+    .info-section{
+        height: 90vh !important;
+    }
+    .overlay-footer{
+        height: 80vh !important;
+    }
+    .bes{
+        top: 130px !important;
+    }
+    .kelas-section .card {
+        display: grid !important;
+        width: 100% !important;
+        height: 55vh !important;
+        border-radius: 24px !important;
+    }
+    .kelas-section .card-img-top {
+        width: 100% !important;
+        height: 28vh !important;
+        border-radius: 23px !important;
+    }
+}
+
+@media (max-width:1360px) {
+    .navbar {
+        width: 227vh !important;
+    }
+    .kore{
+        width: 100% !important;
+        margin-top: 20px !important;
+    }
+    .owl-club , .card-produk img{
+        width: 290px !important;
+        height: 170px !important;
+    }
+    .info-section .card {
+        width: 15rem !important;
+    }
+    .info-section .text-start{
+        font-size: 3rem !important;
+    }
+    .info-section .abc{
+        font-size: 1.2rem !important;
+    }
+    .info-section{
+        height: 70vh !important;
+    }
+    .rewr{
+        font-size: 4.5rem !important;
+    }
+    .koar{
+        top: -42% !important;
+    }
+    .lor{
+        font-size: 4.5rem !important;
+    }
+    .ler{
+        font-size: 1.2rem !important;
+    }
+    .lir{
+        left: 2% !important;
+    }
+    .riwr{
+        font-size: 1.2rem !important;
+    }
+    .kiw{
+        left: 5% !important;
+        top: -59% !important;
+    }
+    .teks1{
+        font-size: 6rem !important;
+    }
+    .teks2{
+        font-size: 1.3rem !important;
+    }
+    .rwe{
+        max-width: 13% !important;
+    }
+    .rwi{
+        max-width: 13% !important;
+    }
+    .rwa{
+        max-width: 13% !important;
+    }
+    .a-1{
+        margin-left: 28px !important;
+    }
+    .a-2{
+        margin-left: 88px !important;
+    }
+    .a-3{
+        margin-left: 155px !important;
+    }
+    .a-4{
+        margin-left: 28px !important;
+    }
+    .kelas-section .col-md-6{
+        width: 93% !important;
+    }
+    .bca{
+        top: -84% !important;
+    }
+    .teks3{
+        font-size: 1rem !important;
+    }
+    .training-section .orw{
+        margin-top: -165px !important;
+    }
+    .por{
+        top: -64vh !important;
+    }
+}
+
+@media(max-width:1150px) {
+    .navbar{
+        width: 192vh !important;
+    }
+    .lor{
+        font-size: 4rem !important;
+    }
+    .ler{
+        font-size: 1rem !important;
+    }
+    .owl-club, .card-produk img{
+        width: 270px !important;
+        height: 165px !important;
+    }
+    .teks-h{
+        font-size: 4rem !important;
+    }
+    .bulat{
+        right: 78% !important;
+    }
+    .bulat1{
+        right: 70% !important;
+    }
+    .card-produk1{
+        height: 130px !important ;
+    }
+    .hiddenmenu h2{
+        font-size: 1.6rem !important;
+    }
+    .list-item{
+        font-size: 0.9rem !important;
+    }
+    .kelas-section .card-title{
+        font-size: 1.4rem !important;
+    }
+    .kelas-section .col-md-3 .card{
+        width: 14rem !important;
+    }
+    .kelas-section .text-star{
+        font-size: 4rem !important;
+    }
+    .kelas-section .text-star img{
+        top: -65vh !important;
+    }
+    .training-section .orw{
+        font-size: 4rem !important;
+    }
+    .training-section .kecil{
+        max-width: 14rem !important;
+    }
+    .por{
+        top: -65vh !important;
+    }
+    .fri{
+        font-size: 3rem !important;
+    }
+    .jadwal-section .card{
+        width: 130vh !important;
+    }
+    .jadwal-section .card-text{
+        font-size: 1.8rem !important;
+    }
+    .jadwal-section .card-title{
+        font-size: 1.8rem !important;
+    }
+    .bulat2{
+        width: 22% !important;
+    }
+    .kelas-section .card {
+        display: grid !important;
+        width: 100% !important;
+        height: 42vh !important;
+        border-radius: 24px !important;
+    }
+    .kelas-section .card-img-top {
+        width: 100% !important;
+        height: 25vh !important;
+        border-radius: 23px !important;
+    }
+}
+
+@media(max-width:1080px) {
+    .navbar{
+        width: 180vh !important;
+    }
+    .owl-club, .card-produk img {
+        width: 255px !important;
+        height: 155px !important;
+    }
+    .overlay-footer button {
+        max-width: 37vh !important;
+        font-size: 17px !important;
+    }
+    .pekt{
+        font-size: 1.5rem !important;
+    }
+    .lor{
+        font-size: 3.5rem !important;
+    }
+    .ler{
+        font-size: 0.9rem !important;
+    }
+    .thumbnail{
+        max-width: 90% !important;
+    }
+    .info-section .teks5{
+        font-size: 4rem !important;
+    }
+    .info-section .abc{
+        font-size: 1.2rem !important;
+    }
+    .a-1{
+        margin-left: 43px !important;
+    }
+    .a-2{
+        margin-left: 95px !important;
+    }
+    .a-3{
+        margin-left: 165px !important;
+    }
+    .a-4{
+        margin-left: 10px !important;
+    }
+    .b-1{
+        margin-left: -18px !important;
+    }
+    .b-2{
+        margin-left: -22px !important;
+    }
+    .hiddenmenu h2 {
+        font-size: 1.4rem !important;
+    }
+    .kelas-section .card-img-top {
+        width: 100% !important;
+        height: 23vh !important;
+        border-radius: 23px !important;
+    }
+}
+
+@media(max-width:991px) {
+    .navbar {
+        width: 166vh !important;
+    }
+    .teks1{
+        font-size: 4rem !important;
+    }
+    .kiw{
+        left: 10% !important;
+        top: -62% !important;
+    }
+    .kow{
+        width: 90px !important;
+        height: 90px !important;
+    }
+    .jadwal-section .card{
+        width: 100vh !important;
+    }
+    .jadwal-section h1{
+        font-size: 3rem !important;
+    }
+    .jadwal-section img{
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .bulat {
+        right: 86% !important;
+        width: 14% !important;
+    }
+    .bulat1 {
+        right: 76% !important;
+        width: 14% !important;
+    }
+    .bulat2 {
+        top: 58% !important;
+        right: -18% !important;
+        width: 30% !important;
+    }
+    .card-produk1 {
+        height: 110px !important;
+        width: 44vh !important;
+    }
+    .kelas-section .text-star {
+        font-size: 3rem !important;
+    }
+    .kelas-section .text-star img {
+        top: -49vh !important;
+    }
+    .teks-h{
+        font-size: 3.4rem !important;
+    }
+    .training-section .orw {
+        font-size: 2.5rem !important;
+    }
+    .por {
+        top: -42vh !important;
+    }
+    .training-section .kecil {
+        max-width: 7rem !important;
+    }
+    .bungklus .teks-4{
+        font-size: 4rem !important;
+    }
+    .bca {
+        top: -85% !important;
+        left: 6% !important;
+    }
+    .bca img {
+        width: 18% !important;
+        height: 10% !important;
+    }
+    .hiddenmenu h2 {
+        font-size: 1.3rem !important;
+    }
+    .Home-Flashfit-section .massage-icon {
+        width: 8% !important;
+        height: 13% !important;
+    }
+    .card-produk2{
+        width: 73% !important;
+        height: 20% !important;
+    }
+    .teks4{
+        font-size: 3.5rem !important;
+    }
+    .infosehat-section .card-body{
+        font-size: 0.9rem !important;
+    }
+    .contact-section .hoa{
+        font-size: 4rem !important;
+    }
+    .contact-section .cba{
+        font-size: 0.8rem !important;
+    }
+    .rwa {
+        position: relative;
+        max-width: 13% !important;
+        top: -9vh;
+        right: -53vh !important;
+    }
+    .kelas-section .card-img-top {
+        width: 100% !important;
+        height: 21vh !important;
+        border-radius: 23px !important;
+    }
+}
+
+@media(max-width:780px) {
+    .navbar {
+        width: 130vh !important;
+    }
+    .Home-Flashfit-section .massage-icon {
+        width: 9% !important;
+        height: 12% !important;
+    }
+    .info-section .abc{
+        font-size: 1rem !important;
+    }
+    .aboutus-section h1{
+        font-size: 3rem !important;
+    }
+    .owl-club, .card-produk img {
+        width: 240px !important;
+        height: 140px !important;
+    }
+    .owl-club, .text-overlay {
+        top: 40% !important;
+        left: 43% !important;
+    }
+    .fri {
+        font-size: 2.5rem !important;
+    }
+    .training-section .orw {
+        font-size: 2.2rem !important;
+    }
+    .overlay-footer button {
+        max-width: 37vh !important;
+        font-size: 17px !important;
+    }
+    .aboutus-section .col-md-8 p {
+        font-size: 0.9rem !important;
+        position: relative;
+        left: 2% !important;
+    }
+    .bulat{
+        right: 67% !important;
+    }
+    .bulat1 {
+        right: 60% !important;
+        width: 14% !important;
+    }
+    .kiw {
+        left: 1% !important;
+        top: -56% !important;
+    }
+    .rwe {
+        position: relative;
+        max-width: 13% !important;
+        left: -31px !important;
+    }
+    .rwa {
+        position: relative;
+        max-width: 19% !important;
+        top: -7vh;
+        right: -38vh !important;
+    }
+    .rwi {
+        position: relative;
+        max-width: 13% !important;
+        left: -54px;
+    }
+    .a-1 {
+        position: relative;
+        left: -12px !important;
+    }
+    .a-2 {
+        position: relative;
+        left: -37px !important;
+    }
+    .a-3 {
+        position: relative;
+        left: -31px !important;
+    }
+    .a-4 {
+        position: relative;
+        left: 226px !important;
+        top: -51px;
+    }
+    .b-1 {
+        position: relative;
+        left: -55px !important;
+    }
+    .b-2 {
+        position: relative;
+        left: -69px !important;
+    }
+    .lor {
+        font-size: 2.6rem !important;
+    }
+    .lir img{
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .lir{
+        top: -82% !important;
+    }
+    .ler{
+        font-size: 0.8rem !important;
+    }
+    .rewr {
+        font-size: 3rem !important;
+    }
+    .koar img {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .koar{
+        top: -35% !important;
+    }
+    .riwr {
+        position: relative;
+        font-size: 1rem !important;
+        top: -24% !important;
+    }
+    .por {
+        top: -28vh !important;
+    }
+    .Home-Flashfit-section .col-md-12 i{
+        font-size: 4rem !important;
+    }
+    .kelas-section .card-title {
+        font-size: 1rem !important;
+    }
+    .kelas-section .col-md-6 img {
+        width: 55% !important;
+    }
+    .kelas-section .col-md-4 i {
+        font-size: 1.3rem !important;
+    }
+    .kelas-section .col-md-6 {
+        height: 110% !important;
+    }
+    .ror {
+        font-size: 3rem !important;
+    }
+    .rir {
+        margin-bottom: -10% !important;
+        font-size: 5rem !important;
+    }
+    .rer{
+        font-size: 2.5rem !important;
+    }
+    .membership-section p{
+        font-size: 1.5rem !important;
+    }
+    .membership-section .col-6 h1{
+        font-size: 4rem !important;
+    }
+    .bulat2 {
+        top: 58% !important;
+        right: -12% !important;
+        width: 24% !important;
+    }
+}
+
+@media(max-width:768px) {
+
+}
+
+@media(max-width:667px) {
+    .navbar {
+        width: 114vh !important;
+    }
+    .Home-Flashfit-section .massage-icon {
+        width: 11% !important;
+        height: 12% !important;
+    }
+    .kelas-section .input-group{
+        top: -5vh !important;
+        right: -28vh !important;
+    }
+    .lir {
+        top: -77% !important;
+        left: 22% !important;
+    }
+    .thumbnail {
+        position: relative;
+        max-width: 79% !important;
+        left: 10% !important;
+    }
+    .rewr {
+        font-size: 3rem !important;
+        position: relative;
+        left: -22% !important;
+    }
+    .riwr {
+        position: relative;
+        font-size: 1rem !important;
+        left: -1% !important;
+        top: -24% !important;
+    }
+    .koar {
+        top: -28% !important;
+        left: -76% !important;
+    }
+    .owl-club, .card-produk img {
+        width: 210px !important;
+        height: 120px !important;
+    }
+    .owl-club, .text-overlay {
+        top: 35% !important;
+        left: 36% !important;
+    }
+    .pekt {
+        font-size: 2.3rem !important;
+    }
+    .kiri{
+        width: 45% !important;
+    }
+    .jadwal-section .card {
+        width: 85vh !important;
+    }
+    .jadwal-section .card-text {
+        font-size: 1.8rem !important;
+        position: relative;
+        left: 24%;
+    }
+    .kiw {
+        left: 22% !important;
+        top: -63% !important;
+    }
+    .rwa {
+        position: relative;
+        max-width: 19% !important;
+        top: -2vh;
+        right: -8vh !important;
+    }
+    .rwi {
+        position: relative;
+        max-width: 13% !important;
+        left: 55px;
+    }
+    .rwe {
+        position: relative;
+        max-width: 13% !important;
+        left: 42px !important;
+    }
+    .a-1 {
+        position: relative;
+        left: -225px !important;
+    }
+    .a-2 {
+        position: relative;
+        left: -57px !important;
+        top: -8vh;
+    }
+    .a-3 {
+        position: relative;
+        left: 20vh !important;
+        top: -16vh;
+    }
+    .b-1 {
+        position: relative;
+        left: 9vh !important;
+        top: -16vh !important;
+    }
+    .b-2 {
+        position: relative;
+        left: 39vh !important;
+        top: -24vh !important;
+    }
+    .a-4 {
+        position: relative;
+        left: 75vh !important;
+        top: -32vh !important;
+    }
+    .bulat1 {
+        right: 68% !important;
+        width: 14% !important;
+    }
+    .aboutus-section h1 {
+        font-size: 2.5rem !important;
+    }
+    .kelas-section .col-md-6 img {
+        width: 75% !important;
+    }
+    .kelas-section .text-star {
+        font-size: 2.6rem !important;
+    }
+    .kelas-section .text-star img {
+        top: -52vh !important;
+    }
+    .bungklus .teks-4 {
+        font-size: 2.5rem !important;
+    }
+    .bca {
+        top: -85% !important;
+        left: 2% !important;
+    }
+    .bca img {
+        width: 14% !important;
+        height: 0% !important;
+    }
+    .bungklus .teks-4 {
+        font-size: 2.5rem !important;
+    }
+    .kelas-section .col-md-6 {
+        height: 55% !important;
+    }
+    .kelas-section .col-md-4 i {
+        font-size: 1rem !important;
+    }
+    .contact-section .hoa {
+        font-size: 2.5rem !important;
+    }
+    .contact-section .cba {
+        font-size: 0.7rem !important;
+    }
+    .contact-section .acb {
+        font-size: 1.8rem !important;
+    }
+    .contact-section .direct {
+        font-size: 0.7rem !important;
+    }
+    .contact-section .bulat3 {
+        right: 70% !important;
+    }
+    .por {
+        top: -36vh !important;
+    }
+    .membership-section .card-title {
+        font-size: 0.5rem !important;
+    }
+    .membership-section .col-6 h1 {
+        font-size: 3rem !important;
+    }
+    .career-section .isi{
+        font-size: 0.8rem !important;
+    }
+    .teks4 {
+        font-size: 2.8rem !important;
+    }
+    .card-produk1 {
+        height: 114px !important;
+        width: 39vh !important;
+    }
+    .cari {
+        position: relative;
+        left: 30vh !important;
+        top: -5vh !important;
+    }
+    .kelas-section .dropdown {
+        position: relative;
+        top: 19vh !important;
+    }
+    .kelas-section .reew {
+        position: relative;
+        top: -5vh !important;
+        right: 11vh !important;
+    }
+    .kelas-section .riiw {
+        position: relative;
+        top: -9vh !important;
+        right: 2vh !important;
+    }
+    .kelas-section .raaw {
+        position: relative;
+        top: -13vh !important;
+        left: 9vh !important;
+    }
+    .kelas-section .roow {
+        position: relative;
+        top: -13vh !important;
+        right: 11vh !important;
+    }
+    .kelas-section .riaw {
+        position: relative;
+        top: -17vh !important;
+        left: -1vh !important;
+    }
+    .kelas-section .rouw {
+        position: relative;
+        top: -21vh !important;
+        left: 10vh !important;
+    }
+    .infosehat-section .card{
+        width: 100% !important;
+    }
+    .koar {
+        top: -28% !important;
+        left: -80% !important;
+    }
+    .koar img {
+        width: 70px !important;
+        height: 70px !important;
+    }
+    .ler {
+        font-size: 1.2rem !important;
+    }
+
+}
+
+@media(max-width:640px) {
+    .card-produk1 {
+        height: 100px !important;
+        width: 36vh !important;
+    }
+    .ler {
+        font-size: 1rem !important;
+    }
+    .koar {
+        top: -28% !important;
+        left: -82% !important;
+    }
+    .koar img {
+        width: 70px !important;
+        height: 70px !important;
+    }
+}
+
+@media(max-width:415px) {
+    .navbar {
+        width: 70vh !important;
+        height: 12vh !important;
+    }
+    .navbar-brand img {
+        width: 70px;
+        position: absolute;
+        left: 20px;
+        top: 8px;
+    }
+    .Home-Flashfit-section{
+        width: 70vh !important;
+        height: 40vh !important;
+    }
+    .Home-Flashfit-section .massage-icon{
+        width: 9vh !important;
+        height: 9vh !important;
+    }
+    .tek1{
+        font-size: 2rem !important;
+        position: absolute;
+        top: 15vh;
+        left: 0vh;
+    }
+    .bes {
+        align-items: end;
+        text-align: end;
+        top: 55px !important;
+        right: -15% !important;
+        width: 100px !important;
+        justify-content: center;
+    }
+    .fa-eye{
+        position: relative;
+        right: 25px !important;
+        top: 18px;
+    }
+    h1{
+        font-size: 3rem !important;
+    }
+    .bulat{
+        left: -10px !important;
+        top: 36px !important;
+        width: 60px !important;
+    }
+    .bulat1{
+        left: 35px !important;
+        top: 36px !important;
+        width: 60px !important;
+    }
+    .pentol3 {
+        left: -9px !important;
+        top: 14px !important;
+        width: 47px !important;
+    }
+    .bulat2{
+        left: 166px !important;
+        top: 32px !important;
+        width: 55px !important;
+    }
+    .bulat3 {
+        left: -4px !important;
+        top: 25px !important;
+        width: 37px !important;
+    }
+    .pentol6 {
+        left: 324px !important;
+        top: -61px !important;
+        width: 50px !important;
+        position: absolute;
+        height: 50px;
+    }
+    .por {
+        top: -23vh !important;
+        left: -3px;
+    }
+    .skls{
+        font-size: 1rem !important;
+    }
+    .pict1{
+        height: 107px;
+        width: 190px !important;
+
+    }
+    .price2{
+        font-size: 1.5rem !important;
+    }
+    .vidio{
+        width: 60vh !important;
+    }
+    .card-produk1 {
+        padding: 0px 3px;
+        height: 11vh !important;
+        width: 24vh !important;
+    }
+    .overlay-footer{
+        height: 26vh !important;
+    }
+    .pekt{
+        font-size: 0.8rem !important;
+        position: relative;
+        bottom: 113px;
+        right: 38px;
+    }
+    .fri{
+        position: relative;
+        bottom: 115px;
+        right: 37px;
+        font-size: 1rem !important;
+    }
+    .gno{
+        position: relative;
+        bottom: 126px;
+        right: 38px;
+        width: 86px;
+        height: 27px;
+        font-size: 0.7rem !important;
+    }
+    .text-overlay2 .card-title{
+        padding: 0;
+        font-size: 14px !important;
+    }
+    .card8{
+        width: 50vh !important;
+        height: 50vh !important;
+    }
+    .teks4{
+        font-size: 1.2rem !important;
+    }
+    .isis{
+        font-size: 0.6rem !important;
+        margin: 0;
+    }
+    .contact-section .hoa{
+        font-size: 2rem !important;
+    }
+    .acb{
+        font-size: 0.7rem !important;
+        margin: 20px !important;
+    }
+    .cba{
+        font-size: 0.7rem !important;
+        margin: 20px !important;
+    }
+    .card-img-top {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px !important;
+    }
+    .kelas-section .card {
+        display: grid !important;
+        width: 100% !important;
+        height: 100% !important;
+        border-radius: 23px !important;
+    }
+        .kelas-section .text-star img {
+        top: -83vh !important;
+    }
+    .info-section .card-title{
+        font-size: 0.6rem !important;
+    }
+    .info-section .card-body .card-text{
+        font-size: 0.5rem !important;
+    }
+    .infosehat-section .card-title{
+        font-size: 1rem !important;
+    }
+    .jadwal-section .card-title {
+        position: relative;
+        font-size: 1.8rem !important;
+        top: 18%;
+    }
+    .jadwal-section .card-text {
+        font-size: 1.6rem !important;
+        position: relative;
+        left: 4%;
+        top: 20%;
+    }
+    .price{
+        font-size: 1.5rem !important;
+        margin-top: 30px;
+    }
+    .green-card{
+        width: 333px !important;
+        height: 155px !important;
+        margin: 5px !important;
+    }
+    .card-produk2{
+        height:100%;
+    }
+    .card-produk2 .card-img-top1{
+        width: 185px !important;
+        height: 95px !important;
+        margin: 0 !important;
+    }
+    .card-produk2 .card-title{
+        font-size: 0.45rem !important;
+    }
+    .py-5 {
+        padding-top: 0rem !important;
+        padding-bottom: 0rem !important;
+    }
+    .pdng{
+        padding:0px;
+    }
+    .text-star{
+        margin-left: 12px;
+        font-size: 1.5rem !important;
+    }
+    .ptk{
+        top: -150px !important;
+        left: -9px;
+    }
+    .wpt{
+        font-size: 2rem !important;
+        margin-right: 8px;
+
+    }
+    .training-section .col-md-4 img{
+        width: 35px !important;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: -10px;
+    }
+    .etk1{
+        position: relative;
+        top: -7vh;
+        right: 16vh;
+    }
+    .etk2{
+        position: relative;
+        top: -11.7vh;
+        right: 0vh;
+    }
+    .etk3{
+        position: relative;
+        top: -16vh;
+        right: -18vh;
+    }
+    .etk4{
+        position: relative;
+        top: -18vh;
+        right: 16vh;;
+    }
+    .etk5{
+        position: relative;
+        top: -22.7vh;
+        right: -1vh;
+    }
+    .etk6{
+        position: relative;
+        top: -27.5vh;
+        right: -18vh;
+    }
+    .etk7{
+        position: relative;
+        top: 0vh;
+        right: 3vh;
+    }
+    .etk8{
+        position: relative;
+        top: 0vh;
+        right: -1vh;
+    }
+    .etk9{
+        position: relative;
+        top: 0vh;
+        right: -6vh;
+    }
+    .infosehat-section .card-img-top{
+        width: 100% !important;
+    }
+    .infosehat-section .card-body{
+        width: 100% !important;
+    }
+    .infosehat-section .card{
+        width: 100% !important;
+    }
+    .kelas-section .col-md-4 i{
+        font-size: 1.7rem !important;
+    }
+    .menu-ft{
+        display:grid;
+        justify-content: start;
+        margin:0 !important;
+    }
+    .menu-ft a{
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    .barqode{
+        width: 25% !important;
+    }
+    .pstore{
+        width: 34% !important;
+    }
+    .coachh{
+        margin-top: 5% !important;
+        margin-left: -39% !important;
+        width: 100% !important;
+    }
+    .pt1{
+        font-size: unset;
+    }
+    .lor{
+        font-size: 3rem !important;
+    }
+    .lir {
+        top: -63vh !important;
+        left: 4vh !important;
+        width: 75px !important;
+        height: 75px !important;
+        position: relative;
+    }
+    .thumbnail{
+        width: 75% !important;
+        margin-left: 50px;
+    }
+    .rewr {
+        font-size: 2rem !important;
+        left: -1vh !important;
+        top: -38vh;
+    }
+    .koar{
+        position:relative;
+        top: 22vh !important;
+        left: 0vh !important;
+        width: 70px !important;
+        height: 70px !important;
+        display: none;
+    }
+    .riwr{
+        font-size: 1.1rem !important;
+        text-align: start !important;
+        padding-left: 10px;
+        padding-top: 30px;
+    }
+    .teks1{
+        font-size: 3rem !important;
+    }
+    .kow{
+        width: 75px !important;
+        height: 75px !important;
+        position: relative;
+        top: -4vh !important;
+        left: -3vh !important;
+    }
+    .rwe {
+        position: relative;
+        top: -17vh !important;
+        left: 20vh !important;
+    }
+    .a-1 {
+        position: relative;
+        top: -32vh !important;
+        left: -6vh !important;
+    }
+    .b-1 {
+        position: relative;
+        top: -48vh !important;
+        left: 21vh !important;
+    }
+    .rwi {
+        position: relative;
+        top: 6vh !important;
+        left: -6vh !important;
+    }
+    .a-2 {
+        position: relative;
+        top: -14vh !important;
+        left: -11vh !important;
+    }
+    .b-2{
+        position: relative;
+        top: -30vh !important;
+        left: 18vh !important;
+    }
+    .rwa {
+        position: relative;
+        top: 25vh !important;
+        left: 17vh !important;
+    }
+    .a-3 {
+        position: relative;
+        top: 4vh !important;
+        left: -16vh !important;
+    }
+    .a-4 {
+        position: relative;
+        top: -12vh !important;
+        left: 20vh !important;
+    }
+    .club-section .owl-club, .card-produk img {
+        width: 201px !important;
+        height: 113px !important;
+    }
+    .club-section .text-overlay .card-title{
+        font-size: 1.5rem !important;
+        position: relative;
+        top: -5px !important;
+        right: 2px !important;
+    }
+    .Home-Flashfit-section .col-md-12 i {
+        position: relative;
+        font-size: 2rem !important;
+        top: -9vh;
+    }
+    .kelas-section .dropdown {
+        position: relative;
+        top: 19vh !important;
+        left: -7vh;
+    }
+    .kelas-section .input-group {
+        top: -5vh !important;
+        right: -22vh !important;
+    }
+    .fry{
+        font-size: 2rem !important;
+    }
+
+    .fry3{
+        position: relative;
+        width: 60px !important;
+        height: 60px !important;
+        top: -16px !important;
+        left: -4px !important;
+    }
+    .fry2{
+        width: 50px !important; 
+        height: 50px !important;
+    }
+    .teks5{
+        font-size: 3rem !important;
+    }
+    .abc{
+        font-size: 1rem !important;
+    }
+    .c1 .card{
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .c1 .card .card-title{
+        font-size: 1.5rem !important;
+    }
+    .c1 .card .card-text{
+        font-size: 1.5rem !important;
+    }
+    .kore{
+        display: none;
+    }
+    .do1{
+        font-size: 2rem !important;
+    }
+    .jadwal-section .card {
+        width: 25rem !important;
+        height: 8rem !important;
+    }
+    .kire {
+        width: 110px !important;
+    }
+    .kiri {
+        width: 150px !important;
+    }
+    .hiddenmenu h2{
+        font-size: 1rem !important;
+    }
+    .hiddenmenu li{
+        font-size: 0.7rem !important;
+    }
+    .apw{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .hiddenmenu.show{
+        position: fixed !important;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+    .overlay-footer button{
+        position: relative;
+        bottom: 132px;
+        right: 38px;
+        width: 87px;
+        height: 27px;
+        font-size: 0.7rem !important;
+    }
+    .training-section .orw {
+        position: relative;
+        font-size: 1.4rem !important;
+        top: 17vh;
+    }
+    .teks3 {
+        font-size: 1.1rem !important;
+    }
+    .kardd{
+        height: 425px !important;
+    }
+
+}
+
+@media(max-width:384px) {
+    .navbar {
+        width: 64vh !important;
+        height: 10vh !important;
+    }
+    .infosehat-section .card-title {
+        font-size: 0.7rem !important;
+    }
+    .career-section .isi {
+        font-size: 0.7rem !important;
+    }
+    .jadwal-section h1 {
+        font-size: 2rem !important;
+    }
+    .jadwal-section .card-title {
+        position: relative;
+        font-size: 1.4rem !important;
+        top: 18%;
+    }
+    .jadwal-section .card-text {
+        font-size: 1.6rem !important;
+        position: relative;
+        left: 0%;
+        top: 4%;
+    }
+    .tek1 {
+        font-size: 1.8rem !important;
+        position: absolute;
+        top: 15vh;
+        left: -3vh;
+    }
+    .navbar-brand img {
+        width: 60px;
+        position: absolute;
+        left: 20px;
+        top: 8px;
+    }
+    .massage-icon{
+        width: 9vh !important;
+        height: 9vh !important;
+        right: 25px !important;
+        top: 31vh !important;
+    }
+    .card-produk1 {
+        padding: 0px 3px;
+        height: 14vh !important;
+        width: 21vh !important;
+    }
+    .pekt {
+        font-size: 0.8rem !important;
+        position: relative;
+        bottom: 120px;
+        right: 38px;
+    }
+    .fri {
+        position: relative;
+        bottom: 133px;
+        right: 37px;
+        font-size: 1rem !important;
+    }
+    .gno {
+        position: relative;
+        bottom: 143px;
+        right: 38px;
+        width: 86px;
+        height: 27px;
+        font-size: 0.7rem !important;
+    }
+    .por {
+        top: -14vh !important;
+        left: -3px;
+    }
+    .text-star {
+        margin-left: 12px;
+        font-size: 1rem !important;
+    }
+    .ptk {
+        top: -14vh !important;
+        left: -3px;
+    }
+    .green-card {
+        width: 295px !important;
+        height: 155px !important;
+        margin: 5px !important;
+    }
+    .card-produk2 .card-img-top1 {
+        width: 173px !important;
+        height: 83px !important;
+        margin: 0 !important;
+    }
+    h1 {
+        font-size: 2.5rem !important;
+    }
+    .pentol4 {
+        left: 139px !important;
+        top: 17px !important;
+        width: 55px !important;
+    }
+    .infosehat-section .card {
+        width: 5.3rem !important;
+        height: 153px !important;
+    }
+    .pidio {
+        width: 50vh !important;
+    }
+    .isis {
+        font-size: 0.55rem !important;
+        margin: 0;
+    }
+    .lor {
+        font-size: 2.5rem !important;
+    }
+    .lir {
+        top: -57vh !important;
+        left: 3vh !important;
+        width: 60px !important;
+        height: 60px !important;
+        position: relative;
+    }
+    .card8 {
+        width: 44vh !important;
+        height: 46vh !important;
+        margin-bottom: 14px;
+    }
+    .ler{
+        font-size: 1.1rem !important;
+    }
+    .riwr {
+        font-size: 1rem !important;
+        text-align: start !important;
+        padding-left: 10px;
+        padding-top: 30px;
+    }
+    .rwe {
+        position: relative;
+        top: -17vh !important;
+        left: 18vh !important;
+    }
+    .a-1 {
+        position: relative;
+        top: -32vh !important;
+        left: -5vh !important;
+    }
+    .b-1 {
+        position: relative;
+        top: -48vh !important;
+        left: 19vh !important;
+    }
+    .rwi {
+        position: relative;
+        top: 6vh !important;
+        left: -6vh !important;
+    }
+    .a-2 {
+        position: relative;
+        top: -14vh !important;
+        left: -9vh !important;
+    }
+    .b-2 {
+        position: relative;
+        top: -30vh !important;
+        left: 17vh !important;
+    }
+    .rwa {
+        position: relative;
+        top: 21vh !important;
+        left: 17vh !important;
+    }
+    .a-3 {
+        position: relative;
+        top: 0vh !important;
+        left: -15vh !important;
+    }
+    .a-4 {
+        position: relative;
+        top: -15vh !important;
+        left: 18vh !important;
+    }
+    .club-section .owl-club, .card-produk img {
+        width: 186px !important;
+        height: 100px !important;
+    }
+    .club-section .text-overlay .card-title {
+        font-size: 1.5rem !important;
+        position: relative;
+        top: -12px !important;
+        right: 10px !important;
+    }
+    .jadwal-section .card {
+        width: 22rem !important;
+        height: 8rem !important;
+    }
+    .abc {
+        font-size: 0.7rem !important;
+    }
+    /* .rowa{
+        position: relative !important;
+        top: 10vh !important;
+    } */
+}
+
+@media(max-width:375px) {
+    .massage-icon {
+        width: 9vh !important;
+        height: 9vh !important;
+        right: 29px !important;
+        top: 31vh !important;
+    }
+    .skls {
+        font-size: 0.9rem !important;
+    }
+    .card-produk1 {
+        padding: 0px 3px;
+        height: 14vh !important;
+        width: 20.5vh !important;
+    }
+    .wpt {
+        font-size: 1.9rem !important;
+        margin-right: 8px;
+    }
+    .text-star {
+        margin-left: 12px;
+        font-size: 1rem !important;
+        position: relative;
+        top: -30px;
+    }
+    .por {
+        top: -9vh !important;
+        left: -3px;
+    }
+    .prc{
+        font-size: 1rem !important;
+    }
+    .kecil {
+        height: 100px;
+        width: 168px !important;
+        margin-bottom: 10px;
+    }
+    .tek1 {
+        font-size: 1.4rem !important;
+        position: absolute;
+        top: 17vh;
+        left: -5vh;
+    }
+    .pentol6 {
+        left: 48vh !important;
+        top: -66px !important;
+        width: 50px !important;
+        position: absolute;
+        height: 50px;
+    }
+    .teks2{
+        font-size: 1rem !important;
+    }
+    .kow {
+        width: 60px !important;
+        height: 60px !important;
+        position: relative;
+        top: -1vh !important;
+        left: -2vh !important;
+    }
+    .ses1{
+        width: 100% !important;
+        height: 342px !important;
+    }
+    .ses2{
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .ses4 {
+        font-size: 4rem !important;
+        top: -14vh;
+        position: absolute;
+    }
+    .ses5 {
+        font-size: 2rem !important;
+        top: -3vh;
+        position: absolute;
+    }
+    .ses6{
+        font-size: 2rem !important;
+        top: -3vh;
+        position: absolute;
+        left: 37vh;
+    }
+    .kardd {
+        height: 440px;
+    }
+    .kardd2 {
+        height: 342px !important;
+    }
+
+}
+
+@media(max-width:320px) {
+    .navbar {
+        width: 54vh !important;
+        height: 9vh !important;
+    }
+    .navbar-brand img {
+        width: 50px;
+        position: absolute;
+        left: 15px;
+        top: 8px;
+    }
+    .massage-icon {
+        width: 8vh !important;
+        height: 8vh !important;
+        right: 14vh !important;
+        top: 26vh !important;
+    }
+    .jadwal-section .card {
+        width: 19rem !important;
+        height: 8rem !important;
+    }
+    .tek1 {
+        font-size: 1.4rem !important;
+        position: absolute;
+        top: 16vh;
+        left: -9vh;
+    }
+    .Home-Flashfit-section {
+        width: 70vh !important;
+        height: 35vh !important;
+    }
+    h1 {
+        font-size: 2rem !important;
+    }
+    .pidio {
+        width: 46vh !important;
+    }
+    .card8 {
+        width: 33vh !important;
+        height: 52vh !important;
+        margin-bottom: 14px;
+    }
+    .card-produk1 {
+        padding: 0px 3px;
+        height: 10vh !important;
+        width: 19.5vh !important;
+    }
+    .kelas-section .text-star {
+        font-size: 2rem !important;
+    }
+    .kelas-section .text-star img {
+        top: -64vh !important;
+    }
+    .Home-Flashfit-section .col-md-12 i {
+        position: relative;
+        font-size: 1.4rem !important;
+        top: -9vh;
+    }
+    .kawe {
+        position: relative !important;
+        left: -7vh !important;
+    }
+    .pekt {
+        font-size: 0.7rem !important;
+        position: relative;
+        bottom: 120px;
+        right: 40px;
+    }
+    .fri {
+        position: relative;
+        bottom: 132px;
+        right: 40px;
+        font-size: 1rem !important;
+    }
+    .gno {
+        position: relative;
+        bottom: 140px;
+        right: 40px;
+        width: 84px;
+        height: 29px;
+        font-size: 0.7rem !important;
+    }
+    .skls {
+        font-size: 0.8rem !important;
+    }
+    .lor {
+        font-size: 2.2rem !important;
+    }
+    .lir {
+        top: -56vh !important;
+        left: 1vh !important;
+        width: 60px !important;
+        height: 60px !important;
+        position: relative;
+    }
+    .riwr {
+        font-size: 0.8rem !important;
+        text-align: start !important;
+        padding-left: 7px;
+        padding-top: 30px;
+    }
+    .teks1 {
+        font-size: 2rem !important;
+    }
+    .kow {
+        width: 50px !important;
+        height: 50px !important;
+        position: relative;
+        top: -3vh !important;
+        left: 1vh !important;
+    }
+    .rwe {
+        position: relative;
+        top: -14vh !important;
+        left: 14vh !important;
+    }
+    .a-1 {
+        position: relative;
+        top: -28vh !important;
+        left: -5vh !important;
+    }
+    .b-1 {
+        position: relative;
+        top: -43vh !important;
+        left: 14vh !important;
+    }
+    .rwi {
+        position: relative;
+        top: 4vh !important;
+        left: -10vh !important;
+    }
+    .a-2 {
+        position: relative;
+        top: -15vh !important;
+        left: -10vh !important;
+    }
+    .b-2 {
+        position: relative;
+        top: -31vh !important;
+        left: 11vh !important;
+    }
+    .rwa {
+        position: relative;
+        top: 16vh !important;
+        left: 12vh !important;
+    }
+    .a-3 {
+        position: relative;
+        top: -4vh !important;
+        left: -16vh !important;
+    }
+    .a-4 {
+        position: relative;
+        top: -19vh !important;
+        left: 13vh !important;
+    }
+    .vidio {
+        width: 45vh !important;
+    }
+    .info-section .text-start {
+        font-size: 2rem !important;
+    }
+    .club-section .owl-club, .card-produk img {
+        width: 144px !important;
+        height: 86px !important;
+    }
+    .club-section .text-overlay .card-title {
+        font-size: 1.4rem !important;
+        position: relative;
+        top: -19px !important;
+        right: 26px !important;
+    }
+    .rowe{
+        font-size: 2rem !important;
+    }
+    .teks3 {
+        font-size: 0.7rem !important;
+    }
+    .training-section .orw {
+        position: relative;
+        font-size: 0.8rem !important;
+        top: 14vh;
+    }
+    .membership-section .col-6 h1 {
+        top: 2vh;
+        left: 5vh;
+        font-size: 2rem !important;
+    }
+    .bulat2 {
+        left: 127px !important;
+        top: 32px !important;
+        width: 55px !important;
+    }
+    .lora{
+        position: relative !important;
+        right: 7vh !important;
+    }
+    .career-section .isi {
+        font-size: 0.6rem !important;
+    }
+    .c1 .card .card-title {
+        font-size: 1.1rem !important;
+    }
+    .c1 .card .card-text {
+        font-size: 1.1rem !important;
+    }
+    .teks5 {
+        font-size: 2rem !important;
+    }
+    .pentol4 {
+        left: 117px !important;
+        top: 17px !important;
+        width: 50px !important;
+    }
+    .green-card {
+        width: 230px !important;
+        height: 155px !important;
+        margin: 5px !important;
+    }
+    .card-produk2 .card-img-top1 {
+        width: 144px !important;
+        height: 80px !important;
+        margin: 0 !important;
+    }
+    .infosehat-section .card {
+        width: 4.5rem !important;
+        height: 150px !important;
+    }
+    .isis {
+        font-size: 0.5rem !important;
+        margin: 0;
+    }
+    .pidio {
+        width: 44vh !important;
+    }
+    .pt1 {
+        font-size: 0.9rem;
+        margin-top: 1px;
+        margin-bottom: 0;
+        margin-left: 9px;
+    }
+    .pentol6 {
+        left: 39vh !important;
+        top: -12vh;
+        width: 50px !important;
+        position: absolute;
+        height: 50px;
+    }
+    .pict1 {
+        height: 85px;
+        width: 141px !important;
+        margin-bottom: 10px;
+    }
+    .text-star {
+        margin-left: 12px;
+        font-size: 0.8rem !important;
+        position: relative;
+        top: -53px;
+    }
+    .por {
+        top: -11vh !important;
+        left: -3px;
+    }
+    .prc {
+        font-size: 0.89rem !important;
+        position: relative;
+        top: -5px;
+    }
+    .ses1{
+        width: 100% !important;
+        height: 342px !important;
+    }
+    .ses2{
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .ses4 {
+        font-size: 4rem !important;
+        top: -14vh;
+        position: absolute;
+    }
+    .ses5 {
+        font-size: 2rem !important;
+        top: -3vh;
+        position: absolute;
+    }
+    .ses6{
+        font-size: 2rem !important;
+        top: -3vh;
+        position: absolute;
+        left: 30vh;
+    }
+    .kardd {
+        height: 409px;
+    }
+    .kardd2 {
+        height: 342px !important;
+    }
+
+}
